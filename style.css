@@ -12,8 +12,11 @@ html, body {
 
 body {
   background-color: #121212;
-  max-width: 2000px;
   color: white;
+}
+
+section {
+  max-width: 2000px;
 }
 
 main {
@@ -23,21 +26,21 @@ main {
   gap: 0rem;
   align-items: center;
 }
-main section {
+main section.view1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
-main section .top {
+main section.view1 .top {
   width: 100%;
 }
-main section .top img {
+main section.view1 .top img {
   width: 100%;
   border-radius: 10px;
 }
-main section .buttom {
+main section.view1 .buttom {
   background-color: #292929;
   border-radius: 10px;
   padding: 1.5rem;
@@ -45,22 +48,22 @@ main section .buttom {
   flex-direction: column;
   gap: 3rem;
 }
-main section .buttom .text {
+main section.view1 .buttom .text {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-main section .buttom .text h1 {
+main section.view1 .buttom .text h1 {
   font-weight: 500;
   font-size: 2.3rem;
   text-transform: uppercase;
 }
-main section .buttom .text p {
+main section.view1 .buttom .text p {
   line-height: 2rem;
   opacity: 0.6;
   font-size: 1.4rem;
 }
-main section .buttom .text button {
+main section.view1 .buttom .text button {
   width: -moz-fit-content;
   width: fit-content;
   border: none;
@@ -68,30 +71,431 @@ main section .buttom .text button {
   padding: 0.3rem 1rem;
   border-radius: 0.5rem;
 }
+main section.view2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view2 .top {
+  width: 100%;
+}
+main section.view2 .top .element {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+main section.view2 .top .element h1 {
+  font-size: 2.5rem;
+  font-weight: 450;
+}
+main section.view2 .top .element p {
+  line-height: 2rem;
+  opacity: 0.6;
+}
+main section.view2 .buttom {
+  width: 100%;
+}
+main section.view2 .buttom .element {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+main section.view2 .buttom .element h1 {
+  font-size: 2.5rem;
+  font-weight: 450;
+}
+main section.view2 .buttom .element p {
+  opacity: 0.6;
+  line-height: 2rem;
+}
+main section.view3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view3 .top {
+  width: 100%;
+}
+main section.view3 .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view3 .buttom > p {
+  text-transform: uppercase;
+}
+main section.view3 .buttom {
+  background-color: #292929;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.view3 .buttom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view3 .buttom .text h1 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+main section.view3 .buttom .text p {
+  line-height: 1.5rem;
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+main section.view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view4 .top {
+  width: 100%;
+}
+main section.view4 .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view4 .buttom > p {
+  text-transform: uppercase;
+}
+main section.view4 .buttom {
+  background-color: #292929;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.view4 .buttom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view4 .buttom .text h1 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+}
+main section.view4 .buttom .text p {
+  line-height: 1.5rem;
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+main section.view5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view5 h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main section.view6 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+main section.view6 .card {
+  border-radius: 0.7rem;
+  width: 100%;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view6 .card .icon, main section.view6 .card .buttom {
+  background-color: rgba(123, 123, 123, 0.1529411765);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.386);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+main section.view6 .card .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.view6 .card .buttom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+main section.view6 .card .buttom p {
+  text-transform: uppercase;
+}
+main section.view6 .card .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 0.5rem 0.6rem;
+}
+main section.view6 .card .icon i {
+  font-size: 1.8rem;
+}
+main section.view7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view7 .top {
+  width: 100%;
+}
+main section.view7 .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view7 .buttom {
+  background-color: #292929;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.view7 .buttom button {
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: none;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+}
+main section.view7 .buttom .text > p {
+  text-transform: uppercase;
+}
+main section.view7 .buttom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view7 .buttom .text h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+main section.view7 .buttom .text p {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+main section.view8 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view8 .info {
+  background-color: #cebd63;
+  color: black;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.view8 .info button {
+  background-color: black;
+  width: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+}
+main section.view8 .info .text > p {
+  text-transform: uppercase;
+}
+main section.view8 .info .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main section.view8 .info .text h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+main section.view8 .info .text p {
+  opacity: 0.8;
+  font-size: 1rem;
+}
 
 @media (min-width: 900px) {
-  main section {
+  main section.view1 {
     flex-direction: row;
     padding: 1rem 4rem;
   }
-  main section .top,
-  main section .buttom {
+  main section.view1 .top,
+  main section.view1 .buttom {
     width: 50%;
   }
-  main section .buttom {
+  main section.view1 .buttom {
     justify-content: space-between;
     padding: 3rem;
   }
-  main section .buttom .text {
+  main section.view1 .buttom .text {
     gap: 2rem;
   }
-  main section .buttom .text h1 {
+  main section.view1 .buttom .text h1 {
     font-size: 3.5rem;
-    font-weight: 4;
+    font-weight: 400;
   }
-  main section .buttom .text p {
+  main section.view1 .buttom .text p {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 2rem;
+  }
+  main section.view2 {
+    width: 100%;
+    flex-direction: row;
+    padding: 2rem 1rem;
+  }
+  main section.view2 .top .element h1 {
+    font-size: 4rem;
+  }
+  main section.view2 .buttom .element h1 {
+    font-size: 4rem;
+  }
+  main section.view3 {
+    flex-direction: row-reverse;
+    padding: 1rem 4rem;
+  }
+  main section.view3 .top,
+  main section.view3 .buttom {
+    width: 50%;
+  }
+  main section.view3 .buttom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view3 .buttom .text {
+    gap: 2rem;
+  }
+  main section.view3 .buttom .text h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  main section.view3 .buttom .text p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+  }
+  main section.view3 .buttom .text .paragharps {
+    display: flex;
+    gap: 2rem;
+  }
+  main section.view4 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view4 .top,
+  main section.view4 .buttom {
+    width: 50%;
+  }
+  main section.view4 .buttom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view4 .buttom .text {
+    gap: 2rem;
+  }
+  main section.view4 .buttom .text h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  main section.view4 .buttom .text p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+  }
+  main section.view4 .buttom .text .paragharps {
+    display: flex;
+    gap: 2rem;
+  }
+  main section.view5 {
+    padding: 1rem 4rem;
+  }
+  main section.view5 h1 {
+    font-size: 3rem;
+  }
+  main section.view6 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view7 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view7 .top,
+  main section.view7 .buttom {
+    width: 50%;
+  }
+  main section.view7 .buttom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view7 .buttom .text {
+    gap: 1rem;
+  }
+  main section.view7 .buttom .text h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  main section.view7 .buttom .text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  main section.view8 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view8 .info {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    gap: 0rem;
+  }
+  main section.view8 .info .text {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+  }
+  main section.view8 .info .text h1 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    width: 60%;
+  }
+  main section.view8 .info .text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  main section.view8 .info .text button {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
   }
 }/*# sourceMappingURL=style.css.map */
